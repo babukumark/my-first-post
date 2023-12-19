@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&family=Caveat&family=Inconsolata:wght@600&family=Inter:wght@100;200;300;400&family=Literata:ital,opsz,wght@0,7..72,500;1,7..72,800&family=Montserrat:wght@700&family=Open+Sans&family=PT+Sans&family=Pacifico&family=Poppins:wght@600&family=Raleway:wght@400;700&family=Roboto:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
+    
+    <title>Dark Mode Theme</title>
+    
+</head>
+<body>
+    <div class="container">
+
+        
+        <button class="toggle-button">Dark Mode</button>
+
+        <h1>Overreacted</h1>
+
+
+        <h2>The WET Codebase</h2>
+        <p class="date">July 13, 2020 • ☕️ 1 min read</p>
+        <p>Let clean code guide you. Then let it go.</p><br>
+
+
+        <h2>Goodbye, Clean Code</h2>
+        <p class="date">January 11, 2020 • ☕️ 5 min read</p>
+        <p>Let clean code guide you. Then let it go.</p><br>
+
+
+        <h2>My Decade in Review</h2>
+        <p class="date">January 1, 2020 • ☕️☕️☕️☕️☕️ 26 min read</p>
+        <p> A personal reflection.</p><br>
+
+
+        <h2>What Are the React Team Principles?</h2>
+        <p class="date">December 25, 2019 • ☕️ 5 min read</p><p>UI Before API.</p> 
+      
+       
+
+
+    </div>
+
+    <script>
+        let  toggleButton = document.querySelector('.toggle-button');
+        let body = document.querySelector('body');
+
+        toggleButton.addEventListener('click',function(){
+            body.classList.toggle('dark-mode');
+            if(toggleButton.innerText==="Dark Mode"){
+                toggleButton.innerText="Light Mode"
+                
+            }
+            else if(toggleButton.innerText === "Light Mode"){
+                toggleButton.innerText="Dark Mode";
+
+            }
+            
+        });
+    </script>
+</body>
+</html>
